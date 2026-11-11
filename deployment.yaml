@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: cloud-baseapp
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: cloud-baseapp
+
+  template:
+    metadata:
+      labels:
+        app: cloud-baseapp
+
+    spec:
+      containers:
+      - name: cloud-baseapp
+        image: cloud-baseapp:1.0
+        ports:
+        - containerPort: 5050
+
