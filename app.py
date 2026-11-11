@@ -8,7 +8,7 @@ def index():
     return f"""
     <h1>Cloud Technologies Laboratory</h1>
     <p>My first Docker application</p>
-    <p>Served by pod: <b>{socket.gethostname()}</b></p>
+    <p>Served by server: <b>{socket.gethostname()}</b></p>
     """
 
 if __name__ == "__main__":
