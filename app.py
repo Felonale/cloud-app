@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return f"""
-    <h1>Cloud Technologies</h1>
+    <h1>Cloud Technologies Laboratory</h1>
     <p>My first Docker application</p>
     <p>Served by pod: <b>{socket.gethostname()}</b></p>
     """
